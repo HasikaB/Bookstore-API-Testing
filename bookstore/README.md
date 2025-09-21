@@ -75,24 +75,6 @@ DATABASE_URL='sqlite:///./database_name.db' uvicorn app.main:app --reload
 
 2. Open the http://127.0.0.1:8000  url in the browser
 
-## Docker
-
-The application can be run within a docker container:
-
-**Prerequisite:** Docker version 20.10+
-
-
-1. Build the image
-
-```
-docker build -t bookstore_image .
-```
-
-2. Run the container
-
-```
-docker run -d --name bookstore_api -p 8000:8000 bookstore_image
-```
 
 ## Tests
 
@@ -122,6 +104,3 @@ To check the coverage with a nice html view:
 - [Pydantic](https://docs.pydantic.dev/latest/)
 - [Pytest](https://docs.pytest.org/en/stable/index.html)
 
-## Author
-
-- **Angela Checa** - [Trjegul84](https://github.com/Trjegul84)
